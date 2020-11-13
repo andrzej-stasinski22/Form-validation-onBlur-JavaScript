@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <script type="text/javascript" src="script.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .komunikat
+        {
+        border:solid 0px blue;
+        margin-left:200px;	
+        color:red;
+        height:20px;
+        }
+        #produkt, #ilosc, #nazwisko, #imie, #email
+        {
+            color:silver;
+        }	
+    </style>
+</head>
+<body>
+<div class="blad" id="blad"></div>
+<div class="content">
+<h3>Formularz 3 - Check all forms, blur, focus</h3>
+<form action="zamowienie.html" method="get" name="zamówienie" id="zamowienie">
+    <ul>
+    	<li>
+		<div class="komunikat" id="bladProdukt"></div>
+        <label>Nazwa produktu :</label>
+        <div><input name="produkt" type="text" id="produkt" value="Produkt"/></div>
+        </li>
+        <li>
+    	<div class="komunikat" id="bladIlosc"></div>
+        <label>Ilość :</label>
+        <div><input name="" type="text" id="ilosc" value="Ilość" value="Ilość"/></div>
+        </li>
+        <li>
+    	<div class="komunikat" id="bladImie"></div>
+        <label>Imię :</label>
+        <div><input name="imie" type="text" id="imie" value="Imię"/></div>
+        </li>
+        <li>
+		<div class="komunikat" id="bladNazwisko"></div>        	
+        <label>Nazwisko :</label>
+        <div><input name="nazwisko" type="text" id="nazwisko" value="Nazwisko"/></div>
+        </li>
+        <li>
+		<div class="komunikat" id="bladEmail"></div>        	
+        <label>Email :</label>
+        <div><input name="email" type="text" id="email" value="Email"/></div>
+        </li>
+        <li>
+		<div class="komunikat"></div>        	
+        <label>Adres :</label>
+        <div><textarea name="adres" cols="12" rows="2" id="adres"></textarea></div>
+        </li>
+        <li>
+    	<div class="komunikat" id="bladRegulamin"></div> 
+        <label>Akceptuję regulamin :</label>
+        <div><input name="regulamin" type="checkbox" id="regulamin"/></div>
+        </li>
+    </ul>
+    <div class="wyslij">
+    	<input name="wyslij" type="submit" value="Wyślij" id="wyslij"/>
+		<input type="reset" value=" kasuj "/>
+	</div>
+	<div>Sprawdzenie czy pola nie są puste</div>
+	<div>Sprawdzenie czy Ilość to liczby</div>
+	<div>Sprawdzenie e-maila</div>
+	<div>Pięć pierwszych pól działa na BLUR</div>
+	<div>Treść w INPUTach. FOCUS, po kliknięciu w pole, znika sugerowany napis w polu INPUT</div>
+</form>
+</div>
+</body>
+</html>
